@@ -15,7 +15,7 @@
     commands:
     - exec: echo "this is 8pm function"
     - exec: mkdir dell
-    - exec: copy nul dell\mycopy.txt
+    - exec: copy nul dell\mycopy1.txt
     keepgoing: false
     strategy: node-first
   uuid: 22967032-7d6c-44bc-aea1-b7e68f56e452
