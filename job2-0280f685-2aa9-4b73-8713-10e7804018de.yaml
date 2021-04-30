@@ -1,0 +1,35 @@
+- defaultTab: nodes
+  description: this makes a dir.
+  executionEnabled: true
+  id: 0280f685-2aa9-4b73-8713-10e7804018de
+  loglevel: INFO
+  name: job2
+  nodeFilterEditable: false
+  options:
+  - description: enter a file name
+    name: FileName
+    value: defaultname
+  plugins:
+    ExecutionLifecycle: null
+  schedule:
+    month: '*'
+    time:
+      hour: '14'
+      minute: '10'
+      seconds: '0'
+    weekday:
+      day: '*'
+    year: '*'
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - exec: mkdir work
+    - exec: copy NUL ${option.FileName}.txt
+    - exec: echo "Hello World"
+    - script: |-
+        cd work
+        copy nul copy.txt
+    keepgoing: false
+    strategy: node-first
+  uuid: 0280f685-2aa9-4b73-8713-10e7804018de
+
