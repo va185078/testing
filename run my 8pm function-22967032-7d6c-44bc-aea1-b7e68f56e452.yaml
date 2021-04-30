@@ -1,0 +1,22 @@
+- defaultTab: nodes
+  description: |-
+    first line
+
+    {{job.link}}
+  executionEnabled: true
+  id: 22967032-7d6c-44bc-aea1-b7e68f56e452
+  loglevel: INFO
+  name: run my 8pm function
+  nodeFilterEditable: false
+  plugins:
+    ExecutionLifecycle: null
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - exec: echo "this is 8pm function"
+    - exec: mkdir dell
+    - exec: copy nul dell\mycopy.txt
+    keepgoing: false
+    strategy: node-first
+  uuid: 22967032-7d6c-44bc-aea1-b7e68f56e452
+
