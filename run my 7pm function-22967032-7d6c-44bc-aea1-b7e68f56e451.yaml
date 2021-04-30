@@ -14,8 +14,6 @@
   sequence:
     commands:
     - exec: echo "hello world"
-    - exec: mkdir dell
-    - exec: copy nul dell\mycopy.txt
     keepgoing: false
     strategy: node-first
   uuid: 22967032-7d6c-44bc-aea1-b7e68f56e451
