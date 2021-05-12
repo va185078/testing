@@ -1,0 +1,17 @@
+- defaultTab: nodes
+  description: ''
+  executionEnabled: true
+  id: 121f1f61-12e8-4d34-8a74-5ca1fd75e034
+  loglevel: INFO
+  name: simple job
+  nodeFilterEditable: false
+  plugins:
+    ExecutionLifecycle: null
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - exec: echo simple job
+    keepgoing: false
+    strategy: node-first
+  uuid: 121f1f61-12e8-4d34-8a74-5ca1fd75e034
+
